@@ -1,14 +1,10 @@
 import styles from '@/styles/pages/home.module.scss';
 
-import Header from '@/components/header';
-
 export default function HomePage()
 {
   return (
-    <div className={styles['container-parent']}>
-      <div className={styles.container}>
-        <Header />
-        <div className="circle-box">
+    <main>
+      <div className="circle-box">
           <div></div>
           <div></div>
         </div>
@@ -31,7 +27,6 @@ export default function HomePage()
             </ul>
           </div>
         </div>
-      </div>
-    </div>
+    </main>
   );
 }
