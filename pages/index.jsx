@@ -1,11 +1,11 @@
 import { useEffect } from 'react';
 
 import classNames from 'classnames';
-import styles from '@/styles/pages/home.module.scss';
+import styles from '@/styles/pages/main.module.scss';
 
 import Circle from '@/components/circle';
 
-export default function HomePage()
+export default function MainPage()
 {
   const handleScrollEvent = (e) =>
   {
