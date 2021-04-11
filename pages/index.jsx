@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import styles from '@/styles/pages/main.module.scss';
 
 import Circle from '@/components/circle';
+import Page from '@/components/page';
 import Home from '@/components/home';
 import Work from '@/components/work';
 
@@ -27,8 +28,12 @@ export default function MainPage()
     <main>
       <Circle />
       <div className={styles.pages}>
-        <Home />
-        <Work />
+        <Page>
+          <Home />
+        </Page>
+        <Page>
+          <Work />
+        </Page>
       </div>
     </main>
   );
