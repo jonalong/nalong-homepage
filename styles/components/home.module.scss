@@ -14,8 +14,12 @@
 {
   font-weight: 600;
   cursor: pointer;
+
+  transition: color ease 300ms;
+
   &:hover
   {
-    color:#F36BFF;
+    color: #F36BFF;
+    font-style: italic;
   }
 }

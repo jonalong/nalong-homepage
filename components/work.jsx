@@ -4,11 +4,11 @@ export default function Work()
 {
   return (
     <div>
-      <ul className="work-list">
-        <li>Remote medical care app</li>
-        <li>interaction design</li>
-        <li>svg icon set</li>
-        <li>retro style mini game</li>
+      <ul className={styles['work-list']}>
+        <li><a>Remote medical care app</a></li>
+        <li><a>Interaction design</a></li>
+        <li><a>Svg icon set</a></li>
+        <li><a>Retro style mini game</a></li>
       </ul>
     </div>
   );
