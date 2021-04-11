@@ -7,11 +7,13 @@ import Page from '@/components/page';
 import Home from '@/components/home';
 import Work from '@/components/work';
 
+
+//스크롤 스크립트
 const LIMIT_DELTA = 30;
 
 export default function MainPage()
 {
-  const pages = [<Home />, <Work />]
+  const pages = [<Home />, <Work />, <div>안뇽</div>]
 
   const [state, setState] = useState({
     moving: false,
@@ -60,6 +62,7 @@ export default function MainPage()
     }
   }
 
+  //html
   return (
     <main>
       <Circle />
