@@ -1,0 +1,21 @@
+.main-text
+{
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+
+  a
+  {
+    color: black;
+  }
+}
+
+.point-text
+{
+  font-weight: 600;
+  cursor: pointer;
+  &:hover
+  {
+    color:chartreuse;
+  }
+}

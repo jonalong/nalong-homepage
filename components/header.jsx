@@ -5,7 +5,7 @@ export default function Header()
   return (
     <header className={styles.header}>
       <h1>
-        <img src="/logo.svg" alt="logo" className={styles.logo} width="60px" />
+        <img src="/logo.svg" alt="logo" className={styles.logo} width="50px" />
       </h1>
       <nav>
         <ul className={styles.nav}>

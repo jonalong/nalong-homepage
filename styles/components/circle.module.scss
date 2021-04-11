@@ -1,0 +1,30 @@
+.circle-box
+{
+  position: absolute;
+  left: 539px;
+  top: 100px;
+  z-index: -999;
+
+  :first-child
+  {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background: #F36BFF;
+    mix-blend-mode: multiply;
+  }
+
+  :last-child
+  {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+
+    background: #FFF427;
+    mix-blend-mode: darken;
+    z-index: 1;
+  }
+}
