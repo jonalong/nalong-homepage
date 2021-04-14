@@ -8,12 +8,17 @@ export default function Home()
   return (
     <div>
       <h1 className={styles['main-text']}>
-        👋 HELLO, <CircleText className={styles['point-text']} image="/images/nalong.jpg">I’M NAON CHO</CircleText><br/>
-        AND I AM A <span className={styles['point-text']}>UX.UI DESIGNER</span><br/>
+        👋 HELLO, 
+        <CircleText className={styles['point-text']} image="/images/nalong.jpg">
+        &nbsp;I’M NAON CHO
+        </CircleText><br/>
+        AND I AM A 
+        <CircleText className={styles['point-text']} image="/images/nalong.jpg">&nbsp;UX.UI DESIGNER</CircleText><br/>
         IF YOU ARE INTERESTED IN MY WORK,<br/>
-        PLEASE VISIT MY <a href="https://github.com/jonalong" target="blank" className={classNames(styles['point-text'], styles['link-text'])}>GITHUB</a>
+        PLEASE VISIT MY 
+        <CircleText className={styles['point-text']} image="/images/github.jpg" href="https://github.com/jonalong">&nbsp;GITHUB</CircleText>
         {' OR '} 
-        <a href="https://daily-nalong.tistory.com/" target="blank" className={classNames(styles['point-text'], styles['link-text'])}>BLOG</a><br/>
+        <CircleText className={styles['point-text']} image="/images/blog.jpg" href="https://daily-nalong.tistory.com/">&nbsp;BLOG</CircleText><br/>
       </h1>
     </div>
   );
