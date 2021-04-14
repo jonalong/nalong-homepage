@@ -9,7 +9,7 @@ import Work from '@/components/work';
 
 
 //스크롤 스크립트
-const LIMIT_DELTA = 20;
+const LIMIT_DELTA = 15;
 
 export default function MainPage()
 {
