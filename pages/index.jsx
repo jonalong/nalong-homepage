@@ -13,7 +13,7 @@ const LIMIT_DELTA = 15;
 
 export default function MainPage()
 {
-  const pages = [<Home />, <Work />, <div>안뇽</div>]
+  const pages = [<Home />, <Work />, <div>thank you for wathing my website!</div>]
 
   const [state, setState] = useState({
     moving: false,
