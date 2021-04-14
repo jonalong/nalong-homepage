@@ -5,7 +5,7 @@
   top: 260px;
   z-index: -999;
 
-  :first-child
+  .small
   {
     position: absolute;
     width: 230px;
@@ -19,7 +19,7 @@
     mix-blend-mode: multiply;
   }
 
-  :last-child
+  .big
   {
     position: absolute;
     width: 450px;
@@ -27,6 +27,7 @@
     border-radius: 50%;
 
     background: #FFF427;
+    background-size: cover;
     mix-blend-mode: darken;
     z-index: 1;
   }
