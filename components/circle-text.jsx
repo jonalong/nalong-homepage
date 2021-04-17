@@ -1,4 +1,5 @@
 import { useContext } from 'react';
+import Link from 'next/link';
 
 import { CircltTextDispatchContext } from '@/pages/_app';
 
@@ -23,12 +24,27 @@ export default function CircleText(props)
 
   if (props.href)
   {
-    return (
-      <a className={props.className} href={props.href}
-        onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
-        {props.children}
-      </a>
-    );
+    if (props.href.startsWith('http'))
+    {
+      return (
+        <a className={props.className} href={props.href} target={props.target}
+          onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          {props.children}
+        </a>
+      );
+    }
+    else
+    {
+      return (
+        <Link href={props.href}>
+          <a className={props.className}
+            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            {props.children}
+          </a>
+        </Link>
+      );
+    }
+    
   }
   else
   {
