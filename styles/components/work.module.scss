@@ -9,12 +9,13 @@
     {
       position: relative;
       display: inline-block;
+      color: #000000;
 
       &:hover
       {
         font-style: italic;
       }
-      
+
       &:hover::after
       {
         position: absolute;
