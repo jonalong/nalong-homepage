@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-import styles from '@/styles/pages/workspage.module.scss';
+import styles from '@/styles/pages/work-password.module.scss';
 
 import { password } from '@/.private.json';
 
@@ -20,12 +20,12 @@ export default function VoidocPage()
     }
     else
     {
-      alert('틀렸습니다.');
+      alert('비밀번호를 다시 입력해주세요 :(');
     }
   };
 
   return (
-    <div className={styles['work-page']}>
+    <div className={styles['work-password']}>
       <h1>
         this project is privite project<br/>
         please enter password
