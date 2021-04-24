@@ -12,7 +12,7 @@ export default function Work()
           </CircleText>
         </li>
         <li>
-          <CircleText className={styles['point-text']} image="/images/tosoone.png" href="https://nalong.studio">
+          <CircleText className={styles['point-text']} image="/images/tosoone.png" href="/works/tosoone">
             Interaction design
           </CircleText>
         </li>

@@ -30,7 +30,7 @@ export default function VoidocPage()
         this project is privite project<br/>
         please enter password
       </h1>
-      <div className={styles['work-text']}>원격진료 시스템 VOIDOC의 브랜딩과 사용자 어플리케이션, 관리자, 의사 웹 디자인</div>
+      <div className={styles['work-text']}>Remote medical care project VOIDOC branding and ux.ui design</div>
       <form method="POST" onSubmit={handleSubmit}>
         <input name="password" type="password" placeholder="enter password" />
       </form>
