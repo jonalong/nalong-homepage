@@ -5,8 +5,8 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  width: $fullWidth + px;
+  width: $full-width + px;
   height: 100%;
 
-  transition: top ease #{$movingMs}ms;
+  transition: top ease #{$moving-ms}ms;
 }
