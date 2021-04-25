@@ -17,7 +17,7 @@
   }
 }
 
-@media screen and (max-width: ($full-width + $padding * 2) + px)
+@media screen and (max-width: $response-width + px)
 {
   .container
   {
