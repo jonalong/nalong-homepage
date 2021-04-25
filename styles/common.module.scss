@@ -16,3 +16,12 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: ($full-width + $padding * 2) + px)
+{
+  .container
+  {
+    width: 100%;
+    padding: 0 $padding + px;
+  }
+}
