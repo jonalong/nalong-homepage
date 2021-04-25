@@ -38,7 +38,7 @@ $small-diameter: 230;
   mix-blend-mode: multiply;
 }
 
-@media screen and (max-width: ($big-diameter + 15) * 2 + px)
+@media screen and (max-width: ($big-diameter + $padding) * 2 + px)
 {
   .circle-box
   {
@@ -48,6 +48,6 @@ $small-diameter: 230;
 
   .big
   {
-    right: 15px;
+    right: $padding + px;
   }
 }
