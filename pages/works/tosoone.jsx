@@ -5,7 +5,7 @@ export default function TosoonePage()
   return (
     <div className={styles['work-block']}>
       <p>
-        In the case of existing fairy tale books and language education learning systems, education is being conducted through courses such as reading books and following them. In this project, we tried to create educational teaching tools using interaction that allow children to learn and experience languages easily and quickly.
+        Current fairy tale books and language educational systems educate children by making them read after listening. This project, unlike the current educational system, educate children through interaction tool, which allow children to learn language faster and more entertaining way.
         <br/><br/>
         <a href="https://www.youtube.com/watch?v=MFxd776FGzg&ab_channel=%EC%A1%B0%EB%82%98%EB%A1%B1" target="blank">click here&nbsp;</a>to watch a video of my project.
       </p>
