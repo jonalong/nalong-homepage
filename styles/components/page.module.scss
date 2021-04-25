@@ -10,3 +10,11 @@
 
   transition: top ease #{$moving-ms}ms;
 }
+
+@media screen and (max-width: $response-width + px)
+{
+  .page
+  {
+    width: 100%;
+  }
+}
