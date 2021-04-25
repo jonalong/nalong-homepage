@@ -4,7 +4,6 @@ import '@/styles/reset.css';
 import '@/styles/global.scss';
 
 import common from '@/styles/common.module.scss';
-import styles from '@/styles/app.module.scss';
 
 import Header from '@/components/header';
 
