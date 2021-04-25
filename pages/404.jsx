@@ -1,6 +1,10 @@
+import common from '@/styles/common.module.scss';
+
 export default function NotFound()
 {
   return (
-    <div>없는 페이지에용</div>
+    <div className={common.container}>
+      <main>없는 페이지에용</main>
+    </div>
   )
 }

@@ -1,34 +1,82 @@
+@import '~@/styles/variables';
+
+$big-diameter: 450;
+$small-diameter: 230;
+
+$small-top: 240;
+$small-left: -110;
+
 .circle-box
 {
   position: absolute;
-  left: 739px;
-  top: 260px;
+  left: 50%;
+  top: 25%;
   z-index: -999;
+}
 
-  .small
+.big
+{
+  position: absolute;
+  width: $big-diameter + px;
+  height: $big-diameter + px;
+  border-radius: 50%;
+
+  background: #FFF427;
+  background-size: cover;
+  mix-blend-mode: darken;
+  z-index: 1;
+}
+
+.small
+{
+  position: absolute;
+  width: $small-diameter + px;
+  height: $small-diameter + px;
+  border-radius: 50%;
+
+  top: $small-top + px;
+  left: $small-left + px;
+
+  background: #F36BFF;
+  mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: ($big-diameter + $padding) * 2 + px)
+{
+  .circle-box
   {
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
-
-    top: 240px;
-    left: -110px;
-
-    background: #F36BFF;
-    mix-blend-mode: multiply;
+    left: initial;
+    right: 0;
   }
 
   .big
   {
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
+    right: $padding + px;
+  }
+}
 
-    background: #FFF427;
-    background-size: cover;
-    mix-blend-mode: darken;
-    z-index: 1;
+@media screen and (max-width: $response-width + px)
+{
+  .big
+  {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: ($padding * 2 + $big-diameter + abs($small-left) ) + px)
+{
+  .big
+  {
+    width: 300px;
+    height: 300px;
+  }
+
+  .small
+  {
+    width: 100px;
+    height: 100px;
+
+    top: 200px;
+    left: -35px;
   }
 }

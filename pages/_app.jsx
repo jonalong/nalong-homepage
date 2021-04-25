@@ -3,6 +3,7 @@ import React, { useReducer } from 'react';
 import '@/styles/reset.css';
 import '@/styles/global.scss';
 
+import common from '@/styles/common.module.scss';
 import styles from '@/styles/app.module.scss';
 
 import Header from '@/components/header';
@@ -30,11 +31,11 @@ export default function MyApp({ Component, pageProps })
   return (
     <CircleTextStateContext.Provider value={circleTextState}>
       <CircltTextDispatchContext.Provider value={circleTextDispatch}>
-        <div className={styles['container-parent']}>
-          <div className={styles.container}>
+        <div className={common['container-parent']}>
+          <div className={common.container}>
             <Header />
-            <Component {...pageProps} />
           </div>
+          <Component {...pageProps} />
         </div>
       </CircltTextDispatchContext.Provider>
     </CircleTextStateContext.Provider>

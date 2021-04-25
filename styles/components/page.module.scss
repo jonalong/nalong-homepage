@@ -3,8 +3,18 @@
 .page
 {
   position: absolute;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: $full-width + px;
   height: 100%;
 
-  transition: top ease #{$movingMs}ms;
+  transition: top ease #{$moving-ms}ms;
+}
+
+@media screen and (max-width: $response-width + px)
+{
+  .page
+  {
+    width: 100%;
+  }
 }

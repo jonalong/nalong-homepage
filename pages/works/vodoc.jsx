@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import common from '@/styles/common.module.scss';
 import styles from '@/styles/pages/work-password.module.scss';
 
 import { password } from '@/.private.json';
@@ -25,17 +26,19 @@ export default function VoidocPage()
   };
 
   return (
-    <div className={styles['work-password']}>
-      <h1>
-        this project is privite project<br/>
-        please enter password
-      </h1>
-      <div className={styles['work-text']}>Remote medical care project VOIDOC branding and ux.ui design</div>
-      <form method="POST" onSubmit={handleSubmit}>
-        <input name="password" type="password" placeholder="enter password" />
-      </form>
+    <div className={common.container}>
+      <div className={styles['work-password']}>
+        <h1>
+          this project is privite project<br/>
+          please enter password
+        </h1>
+        <div className={styles['work-text']}>Remote medical care project VOIDOC branding and ux.ui design</div>
+        <form method="POST" onSubmit={handleSubmit}>
+          <input name="password" type="password" placeholder="enter password" />
+        </form>
 
-      {show && <Voidoc />}
+        {show && <Voidoc />}
+      </div>
     </div>
   )
 }

@@ -2,6 +2,8 @@ import { useState, useEffect } from 'react';
 
 import { useRouter } from 'next/router';
 
+import classNames from 'classnames';
+import common from '@/styles/common.module.scss';
 import styles from '@/styles/pages/main.module.scss';
 
 import Circle from '@/components/circle';
@@ -89,15 +91,17 @@ export default function MainPage()
 
   //html
   return (
-    <main>
-      <Circle />
-      <div className={styles.pages} onWheel={handleScrollEvent}>
-        {pages.map((page, i) =>
-          <Page key={i} style={{ top: (i - activePage) * styles.height }}>
-            {page}
-          </Page>  
-        )}
-      </div>
-    </main>
+    <div className={classNames(common.container, common.full)}>
+      <main className={styles.main}>
+        <Circle />
+        <div className={styles.pages} onWheel={handleScrollEvent}>
+          {pages.map((page, i) =>
+            <Page key={i} style={{ top: (i - activePage) * styles.height }}>
+              {page}
+            </Page>  
+          )}
+        </div>
+      </main>
+    </div>
   );
 }

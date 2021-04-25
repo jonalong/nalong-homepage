@@ -2,6 +2,11 @@
 
 $height: 500;
 
+.main
+{
+  position: relative;
+}
+
 .pages
 {
   position: relative;
@@ -13,5 +18,5 @@ $height: 500;
 :export
 {
   height: $height;
-  movingMs: $movingMs;
+  movingMs: $moving-ms;
 }
