@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 
 import { useRouter } from 'next/router';
 
+import classNames from 'classnames';
 import common from '@/styles/common.module.scss';
 import styles from '@/styles/pages/main.module.scss';
 
@@ -90,7 +91,7 @@ export default function MainPage()
 
   //html
   return (
-    <div className={common.container}>
+    <div className={classNames(common.container, common.full)}>
       <main>
         <Circle />
         <div className={styles.pages} onWheel={handleScrollEvent}>
