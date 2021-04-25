@@ -11,8 +11,9 @@ export default function Circle()
 
   return (
     <div className={styles["circle-box"]}>
-      <div className={styles.big} style={{ backgroundImage: imageUrl }}></div>
-      <div className={styles.small}></div>
+      <div className={styles.big} style={{ backgroundImage: imageUrl }}>
+        <div className={styles.small}></div>
+      </div>
     </div>
   )
 }

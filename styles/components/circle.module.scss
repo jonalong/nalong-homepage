@@ -1,3 +1,5 @@
+@import '~@/styles/variables';
+
 $big-diameter: 450;
 $small-diameter: 230;
 
@@ -34,4 +36,18 @@ $small-diameter: 230;
 
   background: #F36BFF;
   mix-blend-mode: multiply;
+}
+
+@media screen and (max-width: ($big-diameter + 15) * 2 + px)
+{
+  .circle-box
+  {
+    left: initial;
+    right: 0;
+  }
+
+  .big
+  {
+    right: 15px;
+  }
 }
