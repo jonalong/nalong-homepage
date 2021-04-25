@@ -1,5 +1,5 @@
 import common from '@/styles/common.module.scss';
-import styles from '@/styles/components/private/private-work.module.scss';
+import styles from '@/styles/components/work-detail.module.scss';
 
 export default function TosoonePage()
 {

@@ -1,0 +1,28 @@
+.work-block
+{
+  margin-top: 70px;
+  img
+  {
+    width: 100%;
+    margin-bottom: 30px;
+    &:last-child
+    {
+      margin-bottom: 150px;
+    }
+  }
+
+  p
+  {
+    line-height: 1.5em;
+    margin: 0 0 70px 0;
+    a
+    {
+      color: #00AAE0;
+      &:hover
+      {
+        font-style: italic;
+        text-decoration: underline;
+      }
+    }
+  }
+}
