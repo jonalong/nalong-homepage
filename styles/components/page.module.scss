@@ -3,7 +3,9 @@
 .page
 {
   position: absolute;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: $fullWidth + px;
   height: 100%;
 
   transition: top ease #{$movingMs}ms;

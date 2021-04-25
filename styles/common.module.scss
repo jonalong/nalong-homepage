@@ -1,3 +1,5 @@
+@import '~@/styles/variables';
+
 .container-parent
 {
   display: flex;
@@ -7,7 +9,7 @@
 
 .container
 {
-  width: 670px;
+  width: $fullWidth + px;
 
   &.full
   {
