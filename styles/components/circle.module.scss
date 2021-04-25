@@ -3,11 +3,14 @@
 $big-diameter: 450;
 $small-diameter: 230;
 
+$small-top: 240;
+$small-left: -110;
+
 .circle-box
 {
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 25%;
   z-index: -999;
 }
 
@@ -31,8 +34,8 @@ $small-diameter: 230;
   height: $small-diameter + px;
   border-radius: 50%;
 
-  top: 240px;
-  left: -110px;
+  top: $small-top + px;
+  left: $small-left + px;
 
   background: #F36BFF;
   mix-blend-mode: multiply;
@@ -49,5 +52,31 @@ $small-diameter: 230;
   .big
   {
     right: $padding + px;
+  }
+}
+
+@media screen and (max-width: $response-width + px)
+{
+  .big
+  {
+    right: 0;
+  }
+}
+
+@media screen and (max-width: ($padding * 2 + $big-diameter + abs($small-left) ) + px)
+{
+  .big
+  {
+    width: 300px;
+    height: 300px;
+  }
+
+  .small
+  {
+    width: 100px;
+    height: 100px;
+
+    top: 200px;
+    left: -35px;
   }
 }
