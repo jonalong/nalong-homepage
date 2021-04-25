@@ -9,6 +9,19 @@ $small-diameter: 230;
   z-index: -999;
 }
 
+.big
+{
+  position: absolute;
+  width: $big-diameter + px;
+  height: $big-diameter + px;
+  border-radius: 50%;
+
+  background: #FFF427;
+  background-size: cover;
+  mix-blend-mode: darken;
+  z-index: 1;
+}
+
 .small
 {
   position: absolute;
@@ -21,17 +34,4 @@ $small-diameter: 230;
 
   background: #F36BFF;
   mix-blend-mode: multiply;
-}
-
-.big
-{
-  position: absolute;
-  width: $big-diameter + px;
-  height: $big-diameter + px;
-  border-radius: 50%;
-
-  background: #FFF427;
-  background-size: cover;
-  mix-blend-mode: darken;
-  z-index: 1;
 }
