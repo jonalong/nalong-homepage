@@ -28,7 +28,8 @@ export default function CircleText(props)
     {
       return (
         <a className={props.className} href={props.href} target={props.target}
-          onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+          onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+          onClick={handleMouseLeave}>
           {props.children}
         </a>
       );
@@ -38,7 +39,8 @@ export default function CircleText(props)
       return (
         <Link href={props.href}>
           <a className={props.className}
-            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+            onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}
+            onClick={handleMouseLeave}>
             {props.children}
           </a>
         </Link>
