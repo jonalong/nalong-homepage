@@ -1,16 +1,19 @@
+$big-diameter: 450;
+$small-diameter: 230;
+
 .circle-box
 {
   position: absolute;
-  left: 739px;
-  top: 260px;
+  left: 50%;
+  top: 0;
   z-index: -999;
 }
 
 .small
 {
   position: absolute;
-  width: 230px;
-  height: 230px;
+  width: $small-diameter + px;
+  height: $small-diameter + px;
   border-radius: 50%;
 
   top: 240px;
@@ -23,8 +26,8 @@
 .big
 {
   position: absolute;
-  width: 450px;
-  height: 450px;
+  width: $big-diameter + px;
+  height: $big-diameter + px;
   border-radius: 50%;
 
   background: #FFF427;

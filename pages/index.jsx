@@ -92,7 +92,7 @@ export default function MainPage()
   //html
   return (
     <div className={classNames(common.container, common.full)}>
-      <main>
+      <main className={styles.main}>
         <Circle />
         <div className={styles.pages} onWheel={handleScrollEvent}>
           {pages.map((page, i) =>
