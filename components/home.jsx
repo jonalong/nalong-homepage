@@ -13,12 +13,12 @@ export default function Home()
         &nbsp;I’M NAON CHO
         </CircleText><br/>
         AND I AM A 
-        {' '}<CircleText className={styles['point-text']} image="/images/nalong.jpg">UX.UI DESIGNER</CircleText><br/>
+        {' '}<CircleText className={styles['point-text']} image="/images/designer.jpg">UX.UI DESIGNER</CircleText><br/>
         IF YOU ARE INTERESTED IN MY WORK,<br/>
         PLEASE VISIT MY 
         {' '}<CircleText className={styles['point-text']} image="/images/github.jpg" href="https://github.com/jonalong" target="_blank">GITHUB</CircleText>
         {' OR '} 
-        <CircleText className={styles['point-text']} image="/images/blog.jpg" href="https://daily-nalong.tistory.com/" target="_blank">BLOG</CircleText><br/>
+        <CircleText className={styles['point-text']} image="/images/blog.png" href="https://daily-nalong.tistory.com/" target="_blank">BLOG</CircleText><br/>
       </h1>
     </div>
   );

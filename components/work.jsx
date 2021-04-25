@@ -16,9 +16,13 @@ export default function Work()
             Interaction design
           </CircleText>
         </li>
-        <li><a>Svg icon set</a></li>
         <li>
-          <CircleText className={styles['point-text']} image="/images/game.png" href="https://nalong.studio">
+          <CircleText className={styles['point-text']} image="/images/icon.png" href="https://github.com/Team-ZeroHouse/zerohouse-icons" target="_blank">
+            Svg icon set
+          </CircleText>
+        </li>
+        <li>
+          <CircleText className={styles['point-text']} image="/images/game.png" href="/works/minigame">
             Retro style mini game
           </CircleText>
         </li>
