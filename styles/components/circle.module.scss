@@ -4,31 +4,31 @@
   left: 739px;
   top: 260px;
   z-index: -999;
+}
 
-  .small
-  {
-    position: absolute;
-    width: 230px;
-    height: 230px;
-    border-radius: 50%;
+.small
+{
+  position: absolute;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
 
-    top: 240px;
-    left: -110px;
+  top: 240px;
+  left: -110px;
 
-    background: #F36BFF;
-    mix-blend-mode: multiply;
-  }
+  background: #F36BFF;
+  mix-blend-mode: multiply;
+}
 
-  .big
-  {
-    position: absolute;
-    width: 450px;
-    height: 450px;
-    border-radius: 50%;
+.big
+{
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
 
-    background: #FFF427;
-    background-size: cover;
-    mix-blend-mode: darken;
-    z-index: 1;
-  }
+  background: #FFF427;
+  background-size: cover;
+  mix-blend-mode: darken;
+  z-index: 1;
 }
