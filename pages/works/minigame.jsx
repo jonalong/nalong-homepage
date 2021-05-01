@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import Head from 'next/head';
 
 import common from '@/styles/common.module.scss';
 import styles from '@/styles/components/work-detail.module.scss';
@@ -27,6 +28,9 @@ export default function TosoonePage()
 
   return (
     <div className={common.container} ref={containerRef}>
+      <Head>
+        <title>Mini game</title>
+      </Head>
       <div className={styles['work-block']}>
         <p>
           This game works by touch or mouse click. Catch the mouse while avoiding falling acorns.

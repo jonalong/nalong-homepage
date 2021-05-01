@@ -6,7 +6,7 @@ import styles from '@/styles/pages/work-password.module.scss';
 
 import { password } from '@/.private.json';
 
-import Voidoc from '@/components/private/voidoc';
+import VoiceEnr from '@/components/private/voiceenr';
 
 export default function VoidocPage()
 {
@@ -29,7 +29,7 @@ export default function VoidocPage()
   return (
     <div className={common.container}>
       <Head>
-        <title>Voidoc</title>
+        <title>VoiceENR</title>
       </Head>
       <div className={styles['work-password']}>
         <h1>
@@ -43,7 +43,7 @@ export default function VoidocPage()
           <input name="password" type="password" placeholder="enter password" />
         </form>
 
-        {show && <Voidoc />}
+        {show && <VoiceEnr />}
       </div>
     </div>
   )

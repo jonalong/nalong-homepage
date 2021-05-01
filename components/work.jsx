@@ -17,6 +17,16 @@ export default function Work()
           </CircleText>
         </li>
         <li>
+          <CircleText className={styles['point-text']} image="/images/voiceenr.png" href="/works/voiceenr">
+            Voice AI app for nurse
+          </CircleText>
+        </li>
+        {/* <li>
+          <CircleText className={styles['point-text']} image="/images/fitscle.png" href="/works/fitscle">
+            Fitness brand design
+          </CircleText>
+        </li> */}
+        <li>
           <CircleText className={styles['point-text']} image="/images/icon.png" href="https://github.com/Team-ZeroHouse/zerohouse-icons" target="_blank">
             Svg icon set
           </CircleText>

@@ -1,10 +1,14 @@
 import common from '@/styles/common.module.scss';
 import styles from '@/styles/components/work-detail.module.scss';
+import Head from 'next/head';
 
 export default function TosoonePage()
 {
   return (
     <div className={common.container}>
+      <Head>
+        <title>Tosoone</title>
+      </Head>
       <div className={styles['work-block']}>
         <p>
           Current fairy tale books and language educational systems educate children by making them read after listening. This project, unlike the current educational system, educate children through interaction tool, which allow children to learn language faster and more entertaining way.

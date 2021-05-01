@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import Head from 'next/head';
 
 import { useRouter } from 'next/router';
 
@@ -92,6 +93,9 @@ export default function MainPage()
   //html
   return (
     <div className={classNames(common.container, common.full)}>
+      <Head>
+        <title>Nalong studio</title>
+      </Head>
       <main className={styles.main}>
         <Circle />
         <div className={styles.pages} onWheel={handleScrollEvent}>
