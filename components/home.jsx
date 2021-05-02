@@ -9,7 +9,7 @@ export default function Home()
     <div>
       <h1 className={styles['main-text']}>
         👋 HELLO, 
-        <CircleText className={styles['point-text']} image="/images/nalong.jpg" href="https://www.instagram.com/jjo_nalong/" target="_blank">
+        <CircleText className={styles['point-text']} image="/images/nalong.png" href="https://www.instagram.com/il_nalong/" target="_blank">
         &nbsp;I’M NAON CHO
         </CircleText><br/>
         AND I AM A 

@@ -21,7 +21,7 @@ export default function MainPage()
   const router = useRouter();
 
   const hashes = ['', '#works', '#thanks'];
-  const pages = [<Home />, <Work />, <div>thank you for wathing my website!</div>]
+  const pages = [<Home />, <Work />, <div>thank you for wathing my website! </div>]
 
   const [moving, setMoving] = useState(false);
   const [activePage, setActivePage] = useState(0);
