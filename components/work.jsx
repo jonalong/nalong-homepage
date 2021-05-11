@@ -21,14 +21,9 @@ export default function Work()
             Voice AI app for nurse
           </CircleText>
         </li>
-        {/* <li>
-          <CircleText className={styles['point-text']} image="/images/fitscle.png" href="/works/fitscle">
-            Fitness brand design
-          </CircleText>
-        </li> */}
         <li>
-          <CircleText className={styles['point-text']} image="/images/icon.png" href="https://github.com/Team-ZeroHouse/zerohouse-icons" target="_blank">
-            Svg icon set
+          <CircleText className={styles['point-text']} image="/images/icon.png" href="/works/zeroui">
+            Illust and Icon set
           </CircleText>
         </li>
         <li>

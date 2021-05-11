@@ -8,7 +8,7 @@ import { password } from '@/.private.json';
 
 import VoiceEnr from '@/components/private/voiceenr';
 
-export default function VoidocPage()
+export default function VoiceenrPage()
 {
   const [show, setShow] = useState(false);
 
@@ -38,11 +38,12 @@ export default function VoidocPage()
         </h1>
         <div className={styles['work-text']}>
           if you want to show my work, mail me <a href="mailto:jjo-nalong@gmail.com">jjo-nalong@gmail.com</a>
+          <br/><br/>
+          Design Contribution : 100%
         </div>
         <form method="POST" onSubmit={handleSubmit}>
           <input name="password" type="password" placeholder="enter password" />
         </form>
-
         {show && <VoiceEnr />}
       </div>
     </div>

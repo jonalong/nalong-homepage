@@ -4,7 +4,7 @@ import Head from 'next/head';
 import common from '@/styles/common.module.scss';
 import styles from '@/styles/components/work-detail.module.scss';
 
-export default function TosoonePage()
+export default function MinigamePage()
 {
   const containerRef = useRef(null);
   const [iframeHeight, setIframeHeight] = useState(0);
@@ -33,7 +33,8 @@ export default function TosoonePage()
       </Head>
       <div className={styles['work-block']}>
         <p>
-          This game works by touch or mouse click. Catch the mouse while avoiding falling acorns.
+          This game works by touch or mouse click. Catch the mouse while avoiding falling acorns.<br/><br/>
+          Design Contribution : 100%
         </p>
         <iframe src="https://old.nalong.studio/work/cat/game/" width="100%" height={`${iframeHeight}px`} />
         <img src="/catgame/cat01.png" alt="project image"/>
