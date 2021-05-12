@@ -33,7 +33,7 @@ export default function VoidocPage()
       </Head>
       <div className={styles['work-password']}>
         <h1>
-          this project is privite project<br/>
+          this project is private project<br/>
           please enter password
         </h1>
         <div className={styles['work-text']}>
