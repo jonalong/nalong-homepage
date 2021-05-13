@@ -15,7 +15,8 @@ export default function TosoonePage()
           <br/><br/>
           <a href="https://www.youtube.com/watch?v=MFxd776FGzg&ab_channel=%EC%A1%B0%EB%82%98%EB%A1%B1" target="blank">click here&nbsp;</a>to watch a video of my project.
           <br/><br/>
-          Design Contribution : 100%
+          Design Contribution : 100% <br/>
+          Tool : rhino, keyshot, photoshop, illust
         </p>
         <img src="/tosoone/main.jpg" alt="project image"/>
         <img src="/tosoone/process.png" alt="project image"/>

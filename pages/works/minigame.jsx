@@ -34,7 +34,8 @@ export default function MinigamePage()
       <div className={styles['work-block']}>
         <p>
           This game works by touch or mouse click. Catch the mouse while avoiding falling acorns.<br/><br/>
-          Design Contribution : 100%
+          Design Contribution : 100%<br/>
+          Tool : illust, photoshop
         </p>
         <iframe src="https://old.nalong.studio/work/cat/game/" width="100%" height={`${iframeHeight}px`} />
         <img src="/catgame/cat01.png" alt="project image"/>

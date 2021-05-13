@@ -40,7 +40,8 @@ export default function VoidocPage()
           Please find the password within my resume.<br/>
           if you want to show my work, mail me <a href="mailto:jjo-nalong@gmail.com">jjo-nalong@gmail.com</a>
           <br/><br/>
-          Design Contribution : 100%
+          Design Contribution : 100%<br/>
+          Tool : adobe XD, Zeplin, photoshop, illust
         </div>
         <form method="POST" onSubmit={handleSubmit}>
           <input name="password" type="password" placeholder="enter password" />

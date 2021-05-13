@@ -15,7 +15,8 @@ export default function ZerouiPage()
           <br/><br/>
           <a href="https://github.com/Team-ZeroHouse/zerohouse-icons" target="blank">click here&nbsp;</a>to go to the project.
           <br/><br/>
-          Design Contribution : 100%
+          Design Contribution : 100%<br/>
+          Tool : figma, illust, photoshop, drawing
         </p>
         <img src="/zeroui/zeroui.png" alt="project image"/>
       </div>
