@@ -41,7 +41,7 @@ export default function VoidocPage()
           if you want to see my work, mail me <a href="mailto:jjo-nalong@gmail.com">jjo-nalong@gmail.com</a>
           <br/><br/>
           Design Contribution : 100%<br/>
-          Tool : adobe XD, Zeplin, photoshop, illust
+          Tool : adobe XD, Zeplin, photoshop, illust, aftereffect
         </div>
         <form method="POST" onSubmit={handleSubmit}>
           <input name="password" type="password" placeholder="enter password" />

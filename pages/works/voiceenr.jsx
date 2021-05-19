@@ -38,7 +38,7 @@ export default function VoiceenrPage()
         </h1>
         <div className={styles['work-text']}>
           Please find the password within my resume.<br/>
-          if you want to show my work, mail me <a href="mailto:jjo-nalong@gmail.com">jjo-nalong@gmail.com</a>
+          if you want to see my work, mail me <a href="mailto:jjo-nalong@gmail.com">jjo-nalong@gmail.com</a>
           <br/><br/>
           Design Contribution : 100%<br/>
           Tool : figma, illust, photoshop, google forms
