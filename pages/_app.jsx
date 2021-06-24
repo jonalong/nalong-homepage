@@ -1,4 +1,4 @@
-import React, { useReducer } from 'react';
+import React, { useState } from 'react';
 import Head from 'next/head';
 
 import '@/styles/reset.css';
@@ -7,29 +7,16 @@ import '@/styles/global.scss';
 import common from '@/styles/common.module.scss';
 
 import Header from '@/components/header';
+import LightBoxPopup from '@/components/lightbox-popup'
 
-export const CircleTextStateContext = React.createContext();
-export const CircltTextDispatchContext = React.createContext();
-
-function circleTextReducer(state, action)
-{
-  switch (action.type)
-  {
-    case 'SET':
-      return action.payload;
-    case 'UNSET':
-      return null;
-    default:
-      throw new Error('에러얌');
-  }
-}
+export const LightBoxContext = React.createContext();
 
 export default function MyApp({ Component, pageProps })
 {
-  const [circleTextState, circleTextDispatch] = useReducer(circleTextReducer, null);
+  const [lightbox, setLightbox] = useState(null);
 
   return (
-    <>
+    <div className="app">
       <Head>
         <title>Nalong Studio</title>
 
@@ -52,16 +39,16 @@ export default function MyApp({ Component, pageProps })
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <CircleTextStateContext.Provider value={circleTextState}>
-        <CircltTextDispatchContext.Provider value={circleTextDispatch}>
-          <div className={common['container-parent']}>
-            <div className={common.container}>
-              <Header />
-            </div>
-            <Component {...pageProps} />
+      <LightBoxContext.Provider value={{ lightbox, setLightbox }}>
+        <div className={common['container-parent']}>
+          <div className={common.container}>
+            <Header />
           </div>
-        </CircltTextDispatchContext.Provider>
-      </CircleTextStateContext.Provider>
-    </>
+          <Component {...pageProps} />
+        </div>
+
+        {lightbox && <LightBoxPopup lightbox={lightbox} setLightbox={setLightbox} />}
+      </LightBoxContext.Provider>
+    </div>
   )
 }

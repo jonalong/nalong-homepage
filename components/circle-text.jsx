@@ -1,25 +1,20 @@
 import { useContext } from 'react';
 import Link from 'next/link';
 
-import { CircltTextDispatchContext } from '@/pages/_app';
+import { CircleImageContext } from '@/pages/index';
 
 export default function CircleText(props)
 {
-  const circleTextDispatch = useContext(CircltTextDispatchContext);
+  const { setCircleImage } = useContext(CircleImageContext);
 
   const handleMouseEnter = () =>
   {
-    circleTextDispatch({
-      type: 'SET',
-      payload: props.image
-    });
+    setCircleImage(props.image);
   };
 
   const handleMouseLeave = () =>
   {
-    circleTextDispatch({
-      type: 'UNSET'
-    })
+    setCircleImage(null)
   };
 
   if (props.href)

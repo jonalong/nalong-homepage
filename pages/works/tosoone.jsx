@@ -2,6 +2,8 @@ import common from '@/styles/common.module.scss';
 import styles from '@/styles/components/work-detail.module.scss';
 import Head from 'next/head';
 
+import LightBoxImage from '@/components/lightbox-image';
+
 export default function TosoonePage()
 {
   return (
@@ -18,7 +20,7 @@ export default function TosoonePage()
           Design Contribution : 100% <br/>
           Tool : rhino, keyshot, photoshop, illust
         </p>
-        <img src="/tosoone/main.jpg" alt="project image"/>
+        <LightBoxImage src="/tosoone/main.jpg" alt="project image" />
         <img src="/tosoone/process.png" alt="project image"/>
         <p>
           Please insert your card into your device.

@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import Head from 'next/head';
 
 import { useRouter } from 'next/router';
@@ -12,12 +12,15 @@ import Page from '@/components/page';
 import Home from '@/components/home';
 import Work from '@/components/work';
 
+export const CircleImageContext = React.createContext();
 
 //스크롤 스크립트
 const LIMIT_DELTA = 15;
 
 export default function MainPage()
 {
+  const [circleImage, setCircleImage] = useState(null)
+
   const router = useRouter();
 
   const hashes = ['', '#works', '#thanks'];
@@ -97,14 +100,16 @@ export default function MainPage()
         <title>Nalong studio</title>
       </Head>
       <main className={styles.main}>
-        <Circle />
-        <div className={styles.pages} onWheel={handleScrollEvent}>
-          {pages.map((page, i) =>
-            <Page key={i} style={{ top: (i - activePage) * styles.height }}>
-              {page}
-            </Page>  
-          )}
-        </div>
+        <CircleImageContext.Provider value={{circleImage, setCircleImage}}>
+          <Circle />
+          <div className={styles.pages} onWheel={handleScrollEvent}>
+            {pages.map((page, i) =>
+              <Page key={i} style={{ top: (i - activePage) * styles.height }}>
+                {page}
+              </Page>  
+            )}
+          </div>
+        </CircleImageContext.Provider>
       </main>
     </div>
   );
