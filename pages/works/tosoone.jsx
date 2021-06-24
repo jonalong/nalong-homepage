@@ -21,15 +21,15 @@ export default function TosoonePage()
           Tool : rhino, keyshot, photoshop, illust
         </p>
         <LightBoxImage src="/tosoone/main.jpg" alt="project image" />
-        <img src="/tosoone/process.png" alt="project image"/>
+        <LightBoxImage src="/tosoone/process.png" alt="project image"/>
         <p>
           Please insert your card into your device.
         </p>
-        <img src="/tosoone/tosoon1.png" alt="project image"/>
-        <img src="/tosoone/tosoon2.png" alt="project image"/>
-        <img src="/tosoone/01.png" alt="project image"/>
-        <img src="/tosoone/02.png" alt="project image"/>
-        <img src="/tosoone/03.png" alt="project image"/>
+        <LightBoxImage src="/tosoone/tosoon1.png" alt="project image"/>
+        <LightBoxImage src="/tosoone/tosoon2.png" alt="project image"/>
+        <LightBoxImage src="/tosoone/01.png" alt="project image"/>
+        <LightBoxImage src="/tosoone/02.png" alt="project image"/>
+        <LightBoxImage src="/tosoone/03.png" alt="project image"/>
       </div>
     </div>
   )

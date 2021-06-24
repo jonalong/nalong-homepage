@@ -6,9 +6,9 @@ export default function LightBoxImage(props)
 {
   const { setLightbox } = useContext(LightBoxContext);
 
-  const { src, alt } = props;
+  const { src, alt, className } = props;
 
   return (
-    <img src={src} alt={alt} onClick={() => setLightbox({ src, alt })} />
+    <img src={src} alt={alt} className={className} onClick={() => setLightbox({ src, alt })} />
   )
 }
