@@ -12,11 +12,6 @@ export default function Work()
           </CircleText>
         </li>
         <li>
-          <CircleText className={styles['point-text']} image="/images/tosoone.png" href="/works/tosoone">
-            Interaction design
-          </CircleText>
-        </li>
-        <li>
           <CircleText className={styles['point-text']} image="/images/voiceenr.png" href="/works/voiceenr">
             Voice AI app for nurse
           </CircleText>
@@ -24,6 +19,11 @@ export default function Work()
         <li>
           <CircleText className={styles['point-text']} image="/images/icon.png" href="/works/zeroui">
             Illust and Icon set
+          </CircleText>
+        </li>
+        <li>
+          <CircleText className={styles['point-text']} image="/images/tosoone.png" href="/works/tosoone">
+            Interaction design
           </CircleText>
         </li>
         <li>
