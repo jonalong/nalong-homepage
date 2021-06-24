@@ -2,6 +2,8 @@ import common from '@/styles/common.module.scss';
 import styles from '@/styles/components/work-detail.module.scss';
 import Head from 'next/head';
 
+import LightBoxImage from '@/components/lightbox-image';
+
 export default function ZerouiPage()
 {
   return (
@@ -18,7 +20,7 @@ export default function ZerouiPage()
           Design Contribution : 100%<br/>
           Tool : figma, illust, photoshop, drawing
         </p>
-        <img src="/zeroui/zeroui.png" alt="project image"/>
+        <LightBoxImage src="/zeroui/zeroui.png" alt="project image" />
       </div>
     </div>
   )

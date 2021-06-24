@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Head from 'next/head';
 
 import '@/styles/reset.css';
@@ -6,12 +7,16 @@ import '@/styles/global.scss';
 import common from '@/styles/common.module.scss';
 
 import Header from '@/components/header';
+import LightBoxPopup from '@/components/lightbox-popup'
 
+export const LightBoxContext = React.createContext();
 
 export default function MyApp({ Component, pageProps })
 {
+  const [lightbox, setLightbox] = useState(null);
+
   return (
-    <>
+    <div className="app">
       <Head>
         <title>Nalong Studio</title>
 
@@ -34,12 +39,16 @@ export default function MyApp({ Component, pageProps })
         <meta name="theme-color" content="#ffffff" />
       </Head>
 
-      <div className={common['container-parent']}>
-        <div className={common.container}>
-          <Header />
+      <LightBoxContext.Provider value={{ lightbox, setLightbox }}>
+        <div className={common['container-parent']}>
+          <div className={common.container}>
+            <Header />
+          </div>
+          <Component {...pageProps} />
         </div>
-        <Component {...pageProps} />
-      </div>
-    </>
+
+        {lightbox && <LightBoxPopup lightbox={lightbox} setLightbox={setLightbox} />}
+      </LightBoxContext.Provider>
+    </div>
   )
 }
